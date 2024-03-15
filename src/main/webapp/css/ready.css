@@ -1,0 +1,43 @@
+@charset "utf-8";
+#wrap {
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #282828;
+}
+header {
+    z-index: 9999999;
+}
+.book_wrap{
+    display: none;
+}
+.w980 {
+    width: 980px;
+    margin: 0 auto;
+    padding: 100px;
+}
+.ready {
+    text-align: center;
+}
+.ready  img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.ready h1 {
+    font-size: 48px;
+    color: #4A433B;
+    margin-bottom: 45px;
+}
+.ready p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+.ready button {
+    margin-top: 30px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 30px;
+    font-family: inherit;
+    font-weight: 700;
+    color: inherit;
+}

@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.em{
+    font-weight: 700;
+}
+.flex_jc{
+    display: flex;
+    justify-content: space-between;
+}
+.book_wrap{
+    display: none;
+}
+.obt_choose .step2{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+.obt_choose .step2 button {
+    /* 추가 */
+    position: absolute;
+    cursor: pointer;
+}
+.obt_choose .box_tit {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    color: #101010;
+    font-size:18px;
+    background-color: #fafafa;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.obt_choose .box_tit p{
+    font-weight: 700;
+}
+
+
+/* 객실박스 */
+/* 옵션사항 */
+.obt_choose .obt_room .box_tit{
+    border-top: 2px solid #856f56;
+}
+.obt_choose .box_tit img {
+    height: 8px;
+    align-self: center;
+}
+.obt_choose .box_con{
+
+    border: 1px solid #ccc;
+    border-top: none;
+    display: flex;
+    padding: 30px;
+}
+.obt_choose .box_con .colL{
+    width: 50%;
+    padding-right: 30px;
+}
+.obt_room h3{
+    font-weight: 700;
+}
+.obt_room .colL{
+    border-right: 1px dotted #ccc;
+}
+.colL .bed_obt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.colL .bed_obt button{
+    font-size: 25px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.colL .bed_obt .numb_opt{
+    display: flex;
+    align-items: center;
+}
+.colL .bed_obt .numb_opt .bed_mi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #acacac;
+    background-color: #f7f7f7;
+}
+.colL .bed_obt .room_cnt{
+    margin: 0 20px 0px 20px;
+    
+}
+.carbon_c{
+    margin-top: 35px;
+    font-size: 12px;
+    color: #666;
+}
+.carbon_c li{
+    margin-top: 3px;
+    line-height: 2;
+    margin-left: 17px;
+    position: relative;
+}
+.carbon_c li::before{
+    content: '※';
+    position: absolute;
+    left: -17px;
+}
+/* 체크인 */
+.cont_checkin{
+    margin-top: 50px;
+}
+.cont_checkin>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cont_checkin div #apply{
+    width: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.cont_checkin>div label:nth-child(2){
+    font-size: 12px;
+    cursor: pointer;
+}
+.cont_checkin #time-select{
+    height: 40px;
+    width: 98%;
+    margin-top: 20px;
+    margin-left: 1%;
+    
+    border: 1px solid rgb(173, 173, 173);
+}
+.cont_checkin .carbon_c strong{
+    font-weight: 700;
+}
+/* 추가요청 */
+.obt_choose .colR{
+    margin-left: 30px;
+    width: 50%;
+}
+.obt_room .colR #additional_requests{
+    border: 1px solid #ccc;
+    margin: 16px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* 유의사항 */
+.obt_alert {
+    margin-top: 40px;
+    font-size: 12px;
+}
+.obt_alert h3{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.obt_alert .li_circle li{
+    padding-left: 17px;
+    background: url(../images/reservation/icoDotS.gif) no-repeat 5px 7px;
+    line-height: 1.5;
+    margin-top: 3px;
+    color: #666;
+}
+/* 환불규정 */
+.obt_refund{
+    margin-top: 40px;
+}
+
+.obt_refund .cancle_con{
+    color: #666;
+}
+.obt_refund .cancle_con h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.obt_refund .cancle_con p{
+    font-size: 12px;
+    line-height: 1.5;
+}
+/* 리워즈 */
+.reward_member{
+    border: 5px solid #f1e3c4;
+    padding: 22px 30px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 30px;
+    color: #3a3125;
+    font-size: 14px;
+}
+.reward_member .point_cont{
+    margin-bottom: 20px;
+
+}
+.reward_member .point_cont span{
+    color: #856f56;
+    font-size: 19px;
+}
+.notice{
+    margin-bottom: 210px;
+}
+.toggle_wrap{
+    position: relative;
+}
+.scroll_toggle_position{
+    border-top: 2px solid #856f56;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: #fff;
+    width: 100%;
+    
+}
+.scroll_toggle_position .btn_detail{
+    position: absolute;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    background: url(../images/reservation/btn_estcharge_toggle2.png) 0 0 no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.scroll_toggle_position .toggle_panel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 0;
+}
+.scroll_toggle_position .toggle_panel .btn_prev{
+    width: 50%;
+}
+.scroll_toggle_position .toggle_panel .rsv_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 10px;
+    border-left: 1px dotted #ccc;
+}
+.scroll_toggle_position .toggle_panel .rsv_box div{
+    display: flex;
+    align-items: center;
+}
+.scroll_toggle_position .toggle_panel .rsv_box .room_price{
+    margin-right: 25px;
+}
+/* 버튼 클릭시 나오는 예약정보 */
+/* 왼쪽 */
+.rsv_detail{
+    border-bottom: 1px solid #ccc;
+    display: none;
+    z-index: 200;
+    background-color: #fff;
+}
+
+.rsv_detail .detail_wrap{
+    display: flex;
+    padding: 40px 0;
+}
+.rsv_detail .detail_wrap h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.rsv_detail .detail_wrap h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+.rsv_detail .detail_wrap .detail_info{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 40px 20px 0;
+}
+.rsv_detail .detail_wrap .detail_info li{
+    font-size: 12px;
+}
+.rsv_detail .detail_wrap .detail_info li h4{
+    margin: 25px 0 0;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img{
+    /* 위치기준값 */
+    position: relative;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img img{
+    width: 200px;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+/* 오른쪽 */
+.rsv_detail .detail_price{
+    width: 960px;
+    border-left: 1px dotted #ccc;
+    padding-left: 40px;
+    padding-right: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.rsv_detail .detail_price .detail_room{
+    display: flex;
+    align-items: center;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding: 15px 0;
+    
+}
+.rsv_detail .detail_price .detail_room .detail_room_name{
+    font-weight: 700;
+}
+.rsv_detail .detail_price .detail_room .detail_guest p{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.rsv_detail .detail_price .detail_room .detail_sum_price{
+    margin-left: auto;
+    font-weight: 700;
+    color: #856f56;
+    letter-spacing: 1px;
+
+}
+.rsv_detail .detail_price .detail_title_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rsv_detail .detail_price .detail_title_wrap img{
+    height: 12px;
+}
+
+.rsv_detail .detail_payment{
+    font-size: 14px;
+    
+}
+.rsv_detail .detail_payment>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.rsv_detail .detail_payment>ul>li{
+    width: 27%;
+    
+}
+.rsv_detail .detail_payment>ul>li>ul>li{
+    padding: 10px 0;
+}
+.rsv_detail .detail_payment>ul>li:nth-child(1)>ul>li:nth-child(2){
+    /* padding-top: 0; */
+}
+.rsv_detail .var_txt{
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #999;
+    background: #f5f5f5;
+}
+
+/* 커스텀 체크박스 */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px; /* 체크 표시에 공간을 제공 */
+    left: -25px;
+    top: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+.custom-checkbox .checkmark {
+position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #ddd; /* 기본 테두리 색상 */
+    border-radius: 3px;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 4px;
+    top: 0px;
+    width: 3px;
+    height: 7px;
+    border: solid #ddd; /* 기본 체크 표시 색상 */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark {
+    border-color: #856f56; /* 체크 시 테두리 색상 */
+    }
+
+.custom-checkbox input:checked + .checkmark:after {
+    border-color: #856f56; /* 체크 시 체크 표시 색상 */
+    }
+
+.modal_bg{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255 , 255, 255, 0.6);
+}

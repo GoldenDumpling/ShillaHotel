@@ -1,0 +1,784 @@
+@charset "utf-8";
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+#sort_by {
+    border: none;
+}
+.em{
+    font-weight: 700;
+}
+.flex_jc{
+    display: flex;
+    justify-content: space-between;
+}
+.room_choose .step1{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 200px;
+}
+.not_searched{
+    margin-top: 300px;
+    text-align: center;
+    margin-bottom: 300px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    display: none;
+}
+
+/* 커스텀 체크박스 */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px; /* 체크 표시에 공간을 제공 */
+    left: -25px;
+    top: 0px;
+    cursor: pointer;
+    user-select: none;  
+}
+  
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #ddd; /* 기본 테두리 색상 */
+    border-radius: 3px;
+}
+.custom-checkbox+label{
+   color: #727272;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 4px;
+    top: 0px;
+    width: 3px;
+    height: 7px;
+    border: solid #ddd; /* 기본 체크 표시 색상 */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark {
+border-color: #856f56; /* 체크 시 테두리 색상 */
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+border-color: #856f56; /* 체크 시 체크 표시 색상 */
+}
+input[type="checkbox"]:checked ~ label {
+    /* 체크된 상태에서 해당 체크박스와 연관된 라벨의 스타일을 변경합니다. */
+    color: #f00; /* 예시: 텍스트 색상을 빨간색으로 변경 */
+}
+.room_tab_wrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+.room_tab {
+    position: relative;
+    margin-bottom: 20px;
+}
+.room_tab_l {
+    width: 300px;    
+    font-size: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    vertical-align: middle;
+    position: relative;
+}
+.room_tab_l li {
+    width: 100px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.room_tab_l li:first-child {
+    color:brown;
+    font-weight: 700;
+}
+.room_tab_active {
+    border-bottom: 2px solid #9b7f5b;
+}
+.room_tab_r {
+    /* width: 240px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.room_tab_r li:first-child {
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+    padding-right: 35px;
+    font-size: 14px;
+}
+.room_tab_r li div {
+    position: relative;
+}
+.room_tab_r li div img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    left: 60px;
+    top: -18px;
+    display: none;
+}
+.room_tab_r li div img:last-child {
+    display: block;
+}
+.room_tab_r .sort_line {
+    width: 1px;
+    height: 18px;
+    background-color: grey;
+    margin-right: 15px;
+}
+
+.keyword_search {
+    display: none;
+    position: relative;
+}
+.keyword_tit {
+    border: 1px solid #ccc; 
+    border-top: none;
+}
+.keyword_head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ccc;
+}
+.keyword_head img:first-child {
+    width: 75px;
+}
+.keyword_head img:last-child {
+    width: 57px;
+    height: 12px;
+}
+
+.keyword_check ul {
+    display: flex;
+    flex-flow: row wrap;
+    
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.keyword_check ul li{
+    padding-left: 30px;
+    margin-top: 30px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    display: block;
+    height: 20px;
+    
+}
+.keyword_btn {
+    position: relative;
+    top: -15px;
+    left: 295px;
+    cursor: pointer;
+}
+.room_notice {
+    margin-top: 50px;
+    font-size: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #727272;
+}
+.room_notice span {
+    font-weight: 700;
+    cursor: pointer;
+}
+.room_list li {
+    display: flex;
+    flex-flow: column wrap;
+}
+.room_box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    
+}
+.room_box li:first-child {
+    margin-right: 40px;
+    width: 260px;
+}
+
+.room_box li:nth-child(2) {
+    width: 590px;
+}
+.room_box li:nth-child(2) h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.room_box li:nth-child(2) h3+p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.room_box li:nth-child(2) h3+p+p {
+    width: 130px;
+    padding-right: 10px;
+    font-size: 14px;
+    background: url(../images/reservation/btn_benefit.gif) no-repeat center right;
+    color: #b07748;
+    cursor: pointer;
+}
+.room_box>li:first-child>img {
+    width: 270px;
+    height: 150px;
+}
+.room_box>li:last-child>img {
+    width: 160px;
+    height: 50px;
+}
+.room_box li:nth-child(3) {
+    margin-right: 25px;
+    margin-top: 40px;
+}
+.room_box li:nth-child(3) p{
+    font-size: 20px;
+}
+.room_box li:nth-child(3) p+p {
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.room_box li:nth-child(4) {
+    margin-top: 40px;
+}
+
+/* 객실 모달 창 */
+.room_modal{
+    width: 948px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 20000;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    line-height: 1.5;
+    display: none;
+
+    box-shadow: 1px 1px 2px #555;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.room_modal .room_modal_head{
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    background: #9b7f5b;
+    border: 5px solid #9b7f5b;
+    display: flex;
+    justify-content: space-between;
+}
+.room_modal .room_modal_tit{
+    padding-top: 5px;
+    padding-left: 25px;
+    width: 70%;
+    height: 27px;
+    background: url(../images/reservation/popHeadTitReservation.gif) no-repeat 0 -250px;
+}
+.room_modal .room_modal_head .modal_close{
+    width: 19px;
+    height: 19px;
+    margin-top: 6px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+.room_modal .modal_cont{
+    border: 5px solid #9b7f5b;
+    border-top: 0;
+    height: 600px;
+    overflow-y: auto;
+    padding: 25px;
+}
+.room_modal .modal_cont .modal_desc .room_modal_in{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.room_modal .modal_cont .modal_desc ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+.room_modal .modal_cont .modal_desc ul li {
+    width: 25%;
+}
+.room_modal .modal_cont .modal_desc ul li:first-child {
+    width: 100%;
+}
+.room_modal .modal_cont .modal_desc ul li:first-child img {
+    width: 100%;
+}
+.room_modal .modal_cont table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px 0;
+}
+.room_modal .modal_cont table tr:first-child{
+    border-top: 1px solid #cdcbbe;
+}
+.room_modal .modal_cont table th{
+    background: #faf9f4;
+    border-bottom: 1px solid #cdcbbe;
+    font-size: 14px;
+    font-weight: 700;
+    color: #856f56;
+    text-align: center;
+    padding: 25px 30px;
+    vertical-align: middle;
+}
+.room_modal .modal_cont table td{
+    border-bottom: 1px solid #cdcbbe;
+    border-left: 1px solid #eceae1;
+    padding: 25px 30px;
+    color: #444;
+    height: 50px;
+    font-size: 14px;
+}
+
+.room_modal .modal_cont .modal_room_desc{
+    display: flex;
+    justify-content: space-between;
+}
+.room_modal .modal_cont .modal_room_desc li ul li:first-child{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #343434;
+}
+.room_modal .modal_cont .modal_room_desc li ul li:last-child{
+    font-size: 14px;
+    color: #444;
+    margin: 20px 0;
+}
+.room_modal .modal_cont .product_warn{
+    color: #444;
+    line-height: 2;
+    margin: 50px 0;
+}
+
+.room_modal .modal_cont .product_warn p{
+    text-indent: -1em; 
+    /* 첫줄만 이동하게 만듬 */
+    padding-left: 1em; 
+    font-size: 14px;
+}
+
+.room_modal .modal_cont .product_warn p:first-child{
+    font-size: 16px;
+}
+.room_modal .modal_cont .useInfo{
+    border: 1px solid #f4eee3;
+    background: #fdf8ef;
+    color: #101010;
+    padding: 25px 30px;
+    font-size: 14px;
+    
+    text-indent: -1em; 
+    padding-left: 41px; 
+}
+.room_modal .modal_cont .useInfo2 h2{
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+.room_modal .modal_cont .useInfo2 ul{
+    font-size: 12px;
+    color: #666;
+}
+
+
+.refund_warn{
+    margin: 30px 0;
+    border: 1px solid #f4eee3;
+}
+
+.refund_warn .box_tit {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    background-color: #fdf8ef;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.refund_warn .box_tit img{
+    height: 8px;
+    align-self: center;
+}
+.refund_warn ul  {
+    padding: 20px 30px;
+    color: #101010;
+    font-size: 14px;
+}
+
+
+/* 커스텀 체크박스 */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px; /* 체크 표시에 공간을 제공 */
+    left: -25px;
+    top: 0px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #ddd; /* 기본 테두리 색상 */
+    border-radius: 3px;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 4px;
+    top: 0px;
+    width: 3px;
+    height: 7px;
+    border: solid #ddd; /* 기본 체크 표시 색상 */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark {
+border-color: #856f56; /* 체크 시 테두리 색상 */
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+border-color: #856f56; /* 체크 시 체크 표시 색상 */
+}
+.room_select {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+.room_box li+div {
+    margin-top: 50px;
+}
+.room_select .room_select_top_left {
+    width: 130px;
+    height: 30px;
+}
+.room_select .room_select_top_left img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -10px;
+}
+.room_select_top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    border: 1px solid #dcdcdc;
+}
+.room_select_top_left fieldset label {
+    display: flex;
+    justify-content: start;
+    line-height: 20px;
+}
+
+.room_select_top_right {
+    display: flex;
+    flex-flow: row wrap;
+}
+.room_select_top_right img {
+    transform: rotate(90deg);
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+.room_select_top_right p {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 15px;
+    border-right: 1px solid #000;
+    height: 20px;
+}
+.room_select_top_right p+p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 10px;
+    padding-left: 15px;
+    border-right: none;
+}
+.room_select_content {
+    width: 100%;
+    height: 280px;
+    padding: 20px 40px 0px 40px;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    background-color: #f7f7f7;
+}
+.room_select_content div:first-child {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.room_select_content div:first-child p{
+    color:#555555;
+    font-weight: 700;
+}
+.room_select_content div:first-child p+p{
+    color:#333378;
+    font-weight: 700;
+    font-size: 12px;
+}
+.content_box{
+    border: 1px solid #dcdcdc;
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.content_box h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.content_box h2+p {
+    font-size: 12px;
+    margin-bottom: 80px;
+}
+.content_box h2+p+p {
+    font-weight: 700;
+    color:#a56f56;
+}
+.room_select_content {
+    display: none;
+}
+.room_box li img {
+    cursor: pointer;
+}
+
+.toggle_wrap{
+    position: relative;
+}
+.scroll_toggle_position{
+    border-top: 2px solid #856f56;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+    
+}
+.scroll_toggle_position .btn_detail{
+    position: absolute;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    background: url(../images/reservation/btn_estcharge_toggle2.png) 0 0 no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.scroll_toggle_position .toggle_panel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 0;
+}
+.scroll_toggle_position .toggle_panel .btn_prev{
+    width: 50%;
+}
+.scroll_toggle_position .toggle_panel .rsv_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 10px;
+    border-left: 1px dotted #ccc;
+}
+.scroll_toggle_position .toggle_panel .rsv_box div{
+    display: flex;
+    align-items: center;
+}
+.scroll_toggle_position .toggle_panel .rsv_box .room_price{
+    margin-right: 50px;
+    font-weight: 700;
+}
+.btn_login_rsv {
+    cursor: pointer;
+}
+/* 버튼 클릭시 나오는 예약정보 */
+/* 왼쪽 */
+.rsv_detail{
+    border-bottom: 1px solid #ccc;
+    display: none;
+    z-index: 200;
+    background-color: #fff;
+}
+
+.rsv_detail .detail_wrap{
+    display: flex;
+    padding: 40px 0;
+}
+.rsv_detail .detail_wrap h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.rsv_detail .detail_wrap h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+.rsv_detail .detail_wrap .detail_info{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 40px 20px 0;
+}
+.rsv_detail .detail_wrap .detail_info li{
+    font-size: 12px;
+}
+.rsv_detail .detail_wrap .detail_info li h4{
+    margin: 25px 0 0;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img{
+    /* 위치기준값 */
+    position: relative;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img img{
+    width: 200px;
+}
+.rsv_detail .detail_wrap .detail_info .detail_img span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+/* 오른쪽 */
+.rsv_detail .detail_price{
+    width: 960px;
+    border-left: 1px dotted #ccc;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.rsv_detail .detail_price .detail_room{
+    display: flex;
+    align-items: center;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding: 15px 0;
+    
+}
+.rsv_detail .detail_price .detail_room .detail_room_name{
+    font-weight: 700;
+}
+.rsv_detail .detail_price .detail_room .detail_guest p{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.rsv_detail .detail_price .detail_room .detail_sum_price{
+    margin-left: auto;
+    font-weight: 700;
+    color: #856f56;
+    letter-spacing: 1px;
+
+}
+.rsv_detail .detail_price .detail_title_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rsv_detail .detail_price .detail_title_wrap img{
+    height: 12px;
+}
+
+.rsv_detail .detail_payment{
+    font-size: 14px;
+    
+}
+.rsv_detail .detail_payment>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.rsv_detail .detail_payment>ul>li{
+    width: 27%;
+    
+}
+.rsv_detail .detail_payment>ul>li>ul>li{
+    padding: 20px 0;
+}
+.rsv_detail .detail_payment>ul>li:nth-child(1)>ul>li:nth-child(2){
+    padding-top: 0;
+
+}
+.rsv_detail .var_txt{
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #999;
+    background: #f5f5f5;
+}
+.room_list li>ul>li+div+div fieldset label {
+    margin-right: 20px;
+}
+.room_list li:last-child {
+    padding-bottom: 70px;
+}
+.room_list li:last-child .room_box {
+    border-bottom: none;
+}
+.room_list li:nth-child(10)>ul>li:nth-child(3)>p:first-child,
+.room_list li:nth-child(11)>ul>li:nth-child(3)>p:first-child {
+    position: relative;
+    left: -17px;
+}
+.room_list li:nth-child(10)>ul>li:nth-child(4),
+.room_list li:nth-child(11)>ul>li:nth-child(4) {
+    position: relative;
+    left: -17px;
+}

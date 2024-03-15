@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+.room_slide {
+    position: relative;
+}
+.room_contents {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.room_contents .room_main_text button {
+    cursor: pointer;
+
+}
+.activeRoom {
+    display: flex;
+}
+
+.room_contents {
+    width: 1190px;
+    height: 600px;
+}
+.room_contents>img {
+    position: relative;
+    left: 100px;
+    z-index: 0;
+
+}
+.room_contents .right_contents {
+    overflow: hidden;
+    position: relative;
+}
+.room_contents .right_contents>img {
+    position: relative;
+    right: 60px;
+    top: -1px;
+    z-index: 1;
+}
+.room_contents .right_contents_bottom .room_main_text {
+    position: relative;
+    top: -1px;
+    right: -100px;
+    z-index: 2;    
+    height: 301px;
+}
+.room_contents .right_contents_bottom>img {
+    position: relative;
+    left: -100px;
+    top: -1px;
+    height: 302px;
+}
+.room_contents {
+    opacity: 0;
+}
+.room_gnb_menu ul li {
+    position: relative;
+}
+.room_gnb_menu ul li .room_line {
+    width: 2%;
+    height: 1px;
+    margin: 0 auto;
+    margin-top:7px;
+}
+.room_gnb_menu ul li a {
+    opacity: 0.4;
+}
+.room_gnb_menu ul li a:hover {
+    opacity: 1; 
+}
+
+.room_gnb_menu ul li:first-child a{
+    opacity: 1;
+}

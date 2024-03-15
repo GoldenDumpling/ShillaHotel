@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* SAFE AREA */
+body{
+    font-family: "Noto Sans KR",sans-serif;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    z-index: 9999999;
+}
+/* 예약바 감추기 */
+.book_wrap {
+    display: none;
+}
+/* 프로모션 섹션 */
+.news_section {
+    padding-top: 75px;
+}
+.news_section h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #282828;
+    padding: 0 0 25px;
+    text-align: center;
+    position: relative;
+}
+.news_section h1:after{
+    content: '';position: absolute;left: 50%;bottom:0;width: 30px;margin-left: -15px;height: 1px;background: #b2b2b2;
+}
+.news_section h1+p{
+    padding-top: 25px;
+}
+.news_section>p{
+    text-align: center;
+    font-size: 15px; 
+    line-height: 25px;
+}
+.news_section .search_area{
+    display: flex;
+    justify-content: flex-end;
+}
+.news_section .search_area select{
+    border: 1px solid #d7d7d8;
+    font-size: 12px;
+    width: 87px;
+    height: 30px;
+    padding: 7px 0px 7px 8px;
+}
+.news_section .input_area {
+    display: flex;
+    border: 1px solid #d7d7d8;
+    margin-left: 10px;
+    width: 120px;
+    height: 30px;
+}
+.news_section .input_area input{
+    padding-left: 7px;
+    padding-top: 7px;
+}
+.news_section .input_area button{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.news_section table {
+    width: 100%;
+    color: #444444;
+    padding: 35px 0 25px;
+    display: block;
+    font-size: 13px;
+}
+.news_section table th {
+    padding: 10px 5px;
+    width: 96px;
+}
+.news_section table td {
+    padding: 10px 0;
+}
+
+.news_section table tr td th {
+    margin: 0;
+    padding: 0;
+}
+.news_section table {
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+.news_section table th {
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+.news_section table tr {
+    border-bottom: 1px solid #c8c8c8;
+}
+.news_section table td {
+    padding: 17px 0;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+.news_section table td.num {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.news_section table td.type {
+    position: relative;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+.news_section table td.type.notice {
+    color: #4d4612;
+    font-size: 13px;
+}
+.news_section table td.type i {
+    width: 1px;
+    height: 15px;
+    background: rgba(0,0,0,.15);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 20px;
+    
+}
+.news_section table td.tit {
+	position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+}
+.news_section table td.tit a {
+	width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.news_section table td.tit.notice {
+    color: #333;
+}
+.news_section table td.day {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+.news_section table td .new img {
+    vertical-align: middle;
+}
+.news_section table tbody tr:hover {
+    background: #f7f2e7;
+}
+.news_section table tr:hover td {
+    color: #4d4612;
+}
+.news_section table tr:hover td.type i {
+    background: rgba(60,22,81,.15);
+}
+
+
+.news_section .paging {
+    text-align: center;
+    margin: 32px auto;
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+.news_section .paging ul {
+    margin: 0 auto;
+    width: auto;
+    overflow: hidden;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+.news_section .paging ul li {
+    width: auto;
+    height: auto;
+    background-color: inherit;
+    margin: 2.5px 6px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2px 8px;
+}
+.news_section .paging ul li a {
+    color: #999;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+.news_section .paging ul li.on a {
+    color: #282828;
+}
+.news_section .paging ul li a span {
+    height: 27px;
+    display: block;
+    width: 27px;
+    text-indent: -999em;
+    margin: 0 auto;
+}
+
+.news_section .paging ul li.first_page_btn a span {
+    background: url("../images/board/list/first_page_btn.png") no-repeat 0 0;
+    background-size: contain;
+}
+.news_section .paging ul li.prev_page_btn a span {
+    background: url("../images/board/list/prev_page_btn.png") no-repeat 0 0;
+    background-size: contain;
+}
+.news_section .paging ul li.next_page_btn a span {
+    background: url("../images/board/list/next_page_btn.png") no-repeat 0 0;
+    background-size: contain;
+}
+.news_section .paging ul li.last_page_btn a span {
+    background: url("../images/board/list/last_page_btn.png") no-repeat 0 0;
+    background-size: contain;
+}
+
+/* 게시글 존재 x */
+.no_post {
+	text-align: center;
+}
+.no_post img {
+	margin-top: 100px;
+	text-align: center;
+   	width: 100px;
+    height: 100px;
+}
+.no_post h2 {
+	font-size: 36px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+
+/* 새 글 작성 버튼 */
+.publish_btn {
+    display: flex;
+    justify-content: end;
+}
+.new_post {
+    font-family: inherit;
+    font-size: 13px;
+    color: #282828;
+    border: 1px solid #d9d9d9;
+    padding: 10px 37px;
+    font-weight: 700;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.new_post:hover {
+	background: #282828;
+	color: #d9d9d9;
+}

@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* SAFE AREA */
+body{
+    font-family: "Noto Sans KR",sans-serif;
+}
+header {
+    z-index: 9999999;
+}
+#wrap {
+    margin: 0 auto;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.book_wrap{
+    display: none;
+}
+/* 프로모션 섹션 */
+.section_promotion{
+    position: relative;
+    padding-bottom: 177px;
+}
+.section_promotion>h3{
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    z-index: 1;
+    width: 106px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color:#666666;
+}
+.section_promotion>h4 {
+    position: absolute;
+    right: 0;
+    top: 39px;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 13px;
+    font-size: 11px;
+}
+.section_promotion>h4 span {
+    cursor: pointer;
+}
+.section_promotion>h4>img {
+    width: 13px;
+    height: 14px;
+    cursor: pointer;
+}
+.section_promotion h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #282828;
+    padding: 0 0 25px;
+    text-align: center;
+    position: relative;
+    padding-top: 104px;
+    margin-bottom: 21px;
+}
+.section_promotion h1:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    width: 30px;
+    margin-left: -15px;
+    height: 1px;
+    background: #b2b2b2;
+}
+
+.section_promotion>p{
+    text-align: center;
+    font-size: 18px; 
+    line-height: 25px;
+    color:#282828;
+}
+
+.section_promotion .sort_area{
+    max-width: 695px;
+    margin: 74px auto 113px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+
+/* 커스텀 라디오 */
+.custom-radio {
+
+position: relative;
+padding-left: 25px;
+cursor: pointer;
+user-select: none;
+}
+
+.custom-radio input[type="radio"] {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+.custom-radio .checkmark {
+position: absolute;
+top: 4px;
+left: 0;
+height: 14px;
+width: 14px;
+
+border: 1px solid #666;
+}
+
+.custom-radio .checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+display: block;
+background-color: #666; 
+/* 체크 표시의 색상 */
+}
+
+.custom-radio .checkmark:after {
+left: 3px;
+top: 3px;
+width: 6px;
+height: 6px;
+}
+
+.offer{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.offer>div{
+    width: 400px;
+    border-right: 0.5px solid #eee;
+    border-bottom: 0.5px solid #eee;
+}
+.offer>div:nth-child(1),.offer>div:nth-child(4),.offer>div:nth-child(7){
+    border-left: 0.5px solid #eee;
+}
+.offer div img{
+    width: 100%;
+}
+.offer .offer_text{
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    position: relative;
+    color:#282828;
+}
+
+.offer .offer_text::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+    background-color: #f3f3f3;
+    opacity: 0.3;
+}
+.offer>div a img {
+    height: 265px;    
+}
+.offer .offer_text p:first-child{
+    font-size: 14px;
+    padding: 21px 0;
+}
+.offer .offer_text h2:before{
+    display: block;
+    content: '';
+    width: 16px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 0px auto;
+    margin-bottom: 13px;
+}
+.offer .offer_text h2{
+    font-size: 22px;
+    display: block;
+    padding-top: 7px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.offer .offer_text p+h2+p{ 
+    font-size: 13px;
+    line-height: 24px;
+    color: #282828;
+    margin-top: 14px;
+    word-wrap: break-word;
+    max-height: 72px;
+}
+.offer .offer_text h3 {
+    position: absolute;
+    left: 130px;
+    bottom: 64px;
+    z-index: 1;
+    color:#282828;
+    font-size: 13px;
+}
+.section_promotion button{
+    display: block;
+    width: 140px;
+    height: 42px;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 60px auto 120px;
+}
+.offer .dining:hover,
+.offer .web_benefit:hover,
+.offer .package:hover,
+.offer .diningoffer_text:hover{
+    background-color: #fff0d0b6;
+}
+.offer .dining:hover .offer_text,
+.offer .web_benefit:hover .offer_text,
+.offer .package:hover .offer_text,
+.offer .diningoffer_text:hover .offer_text{
+    color: #502d16;
+}
+/* 아래 마진 주기 */
+.offer>div {
+    margin-bottom: 36px;
+}
+.top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #5D554F;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
