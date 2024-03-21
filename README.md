@@ -18,7 +18,7 @@
 
 | **정동균** | **함지수** | **김태영** | **주진홍** | **최민기** | **최두연** | **김광제** |
 | :------: |  :------: | :------: | :------: |  :------: | :------: | :------: |
-| [🧑jjdonggyun](https://github.com/jjdonggyun) | [🧑jjdonggyun](https://github.com/jjdonggyun) | [🧑Ziggurat23](https://github.com/Ziggurat23) | [🧑sangari1998](https://github.com/sangari1998) | [🧑jajaham4](https://github.com/jajaham4) | [🧑dy0814](https://github.com/dy0814) | [🧑KimKwangje](https://github.com/KimKwangje) |
+| [🧑jjdonggyun](https://github.com/jjdonggyun) | [🧑HamJisoo]([https://github.com/jjdonggyun](https://github.com/HamJisoo)) | [🧑Ziggurat23](https://github.com/Ziggurat23) | [🧑sangari1998](https://github.com/sangari1998) | [🧑jajaham4](https://github.com/jajaham4) | [🧑dy0814](https://github.com/dy0814) | [🧑KimKwangje](https://github.com/KimKwangje) |
 
 </div>
 
