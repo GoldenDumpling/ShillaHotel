@@ -135,7 +135,7 @@ if ($(this).hasClass('on')) {
 });
 
 $('.btn_login_rsv').click(function(){
-    window.location.href = 'reservation2.html';
+    window.location.href = 'reservation2.jsp';
 })
 
 let selectedRoom = $('.selectRoom');
