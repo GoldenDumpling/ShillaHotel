@@ -93,7 +93,7 @@
      │     │     └── UserDAO
      │     └── util.weather
      │     │     └── WeatherServlet
-└── webapp
+     └── webapp
      │     ├── css, images, js, upload
      │     ├── META-INF
      │     ├── WEB-INF
